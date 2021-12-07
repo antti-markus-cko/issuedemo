@@ -25,6 +25,6 @@ class MainControllerTest {
   void info() throws Exception {
     var r = mockMvc.perform(get("/info")).andDo(print())
         .andExpect(status().isOk())
-        .andExpect(content().string("Test hello!"));
+        .andExpect(content().string("Test hello from test resources!"));
   }
 }
